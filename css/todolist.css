@@ -1,0 +1,148 @@
+html{
+  height: 100%;
+}
+body{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: #EDFDF6;
+  min-height: 100%;
+}
+.todo_wrap{
+  justify-content: center;
+  margin-top: 3rem;
+  min-width: 600px;
+}
+.todo_title{
+  padding: 2rem;
+  text-align: center;
+  color: #0CC291;
+  font-size: 5rem;
+}
+.todo_box{
+  background-color: white;
+  border: 1px solid #ddd;
+}
+.todo_inputBox{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  height: 3rem;
+  border-bottom: 1px solid #ddd;
+  justify-content: flex-start;
+  align-items: center;
+}
+button{
+  background-color: transparent;
+  border: 0;
+}
+.comlpeteAll_btn{
+  color: gray;
+  min-width: none;
+  min-height: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0.5rem 0.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.comlpeteAll_btn.checked{
+  color: #FF8210;
+}
+.todo_input{
+  width: 80%;
+  text-align: center;
+  border: 0;
+  outline: none;
+  font-size: 1.3rem;
+}
+.todo_item{
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  border-bottom: 1px solid #ddd;
+}
+.todo_item:hover .delBtn{
+  opacity: 1;
+}
+.checkbox{
+  min-width: none;
+  min-height: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0.5rem 0.5rem;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid #ddd;
+}
+.todo_item.checked .checkbox{
+  border: 2px solid #FFDA53;
+  color: #FFDA53;
+}
+.todo{
+  font-size: 1.3rem;
+  padding: 0 1rem;
+  width: 80%;
+}
+.todo_item.checked .todo{
+  font-style: italic;
+  text-decoration: line-through;
+  color: lightgrey;
+}
+.delBtn{
+  opacity: 1;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.todo_bottom{
+  height: 3rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.btn_group button{
+  border: 1px solid #eee;
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn_group button.selected{
+  border: 2px solid #0CC291;
+  padding: 0.2rem 0.5rem;
+  margin: 0 0.5rem;
+  border-radius: 8px;
+}
+.clear-comlpete-btn:hover{
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.edit_input{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 590px;
+  height: 2.8rem;
+  margin: 0;
+  outline: none;
+}
+p.info{
+  line-height: 2;
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #0CC291;
+}

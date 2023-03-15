@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/common/reset.css">
+  <link rel="stylesheet" href="css/todolist.css">
+  <title>TodoList</title>
+</head>
+<body>
+  <div class="todo_wrap">
+    <div class="todo_title">To do List</div>
+    <div class="todo_box">
+      <div class="todo_inputBox">
+        <button class="comlpeteAll_btn">✔</button>
+        <input type="text" class="todo_input" placeholder="해야 할 일을 입력해주세요.">
+      </div>
+      <ul class="todo_list">
+        <!--
+        //할 일이 끝났을 떄
+          <li class="todo_item checked">   
+            <div class="checkbox">✔</div>
+            <div class="todo">첫번째 할 일</div>
+            <button class="delBtn">x</button>
+          </li>
+
+        //할 일이 안끝났을 때
+          <li class="todo_item">   
+            <div class="checkbox"></div>
+            <div class="todo">두번째 할 일</div>
+            <button class="delBtn">x</button>
+          </li>-->
+      </ul>
+      <div class="todo_bottom">
+        <div class="left_items"></div>
+        <div class="btn_group">
+          <button class="show-all-btn selected" data-type="all">전체</button>
+          <button class="show-active-btn" data-type="active">진행중...</button>
+          <button class="show-completed-btn" data-type="completed">완료</button>
+        </div>
+        <button class="clear-comlpete-btn">Clear Completed</button>
+      </div>
+    </div>
+    <p class="info">"더블클릭" 시 수정 가능!<br>수정 후 "Enter"</p>
+  </div>
+  <script src="js/todolist.js"></script>
+</body>
+</html>
